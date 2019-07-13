@@ -3,7 +3,7 @@ const convict = require('convict');
 // Define a schema
 const conf = convict({
   env: {
-    doc: 'The applicaton environment.',
+    doc: 'The application environment.',
     format: ['development', 'production', 'test'],
     default: 'development',
     env: 'NODE_ENV'

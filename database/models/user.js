@@ -1,9 +1,9 @@
 // grab the things we need
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 // create a schema
-var userSchema = new Schema({
+const userSchema = new Schema({
   name: String,
   username: { type: String, required: true, unique: true },
   password: { type: String, required: true },
@@ -30,7 +30,7 @@ userSchema.methods.dudify = function() {
 // on every save, add the date
 userSchema.pre('save', function(next) {
   // get the current date
-  var currentDate = new Date();
+  let currentDate = new Date();
 
   // change the updated_at field to current date
   this.updated_at = currentDate;
@@ -44,7 +44,7 @@ userSchema.pre('save', function(next) {
 
 // the schema is useless so far
 // we need to create a model using it
-var User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
 
 // make this available to our users in our Node applications
 module.exports = User;

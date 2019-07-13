@@ -5,9 +5,9 @@ const Config = require('./config');
 const db = new Database(Config.get('mongodb'));
 
 myUser = {
-    name: "Khidash",
-    username: "jojo",
-    password: "mrjojo"
+  name: "Khidash",
+  username: "jojo",
+  password: "mrjojo"
 };
 
 db.addNewUser(myUser);

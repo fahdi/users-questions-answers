@@ -7,7 +7,7 @@ Using mongoose with express
 - Run `yarn` to install dependencies
 - Run `yarn start` to serve the app
 
-# pre requisites 
+# Pre-requisites 
 
 A running mongo db server
 

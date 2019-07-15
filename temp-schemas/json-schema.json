@@ -1,0 +1,90 @@
+ 1 {
+ 2   "definitions": {},
+ 3   "$schema": "http://json-schema.org/draft-07/schema#",
+ 4   "$id": "http://example.com/root.json",
+ 5   "type": "object",
+ 6   "title": "The Root Schema",
+ 7   "required": [
+ 8     "question",
+ 9     "answers",
+10     "defaultAnswer",
+11     "id",
+12     "userId"
+13   ],
+14   "properties": {
+15     "question": {
+16       "$id": "#/properties/question",
+17       "type": "string",
+18       "title": "The Question Schema",
+19       "default": "",
+20       "examples": [
+21         ""
+22       ],
+23       "pattern": "^(.*)$"
+24     },
+25     "answers": {
+26       "$id": "#/properties/answers",
+27       "type": "array",
+28       "title": "The Answers Schema",
+29       "items": {
+30         "$id": "#/properties/answers/items",
+31         "type": "object",
+32         "title": "The Items Schema",
+33         "required": [
+34           "text",
+35           "desc"
+36         ],
+37         "properties": {
+38           "text": {
+39             "$id": "#/properties/answers/items/properties/text",
+40             "type": "string",
+41             "title": "The Text Schema",
+42             "default": "",
+43             "examples": [
+44               ""
+45             ],
+46             "pattern": "^(.*)$"
+47           },
+48           "desc": {
+49             "$id": "#/properties/answers/items/properties/desc",
+50             "type": "string",
+51             "title": "The Desc Schema",
+52             "default": "",
+53             "examples": [
+54               ""
+55             ],
+56             "pattern": "^(.*)$"
+57           }
+58         }
+59       }
+60     },
+61     "defaultAnswer": {
+62       "$id": "#/properties/defaultAnswer",
+63       "type": "string",
+64       "title": "The Defaultanswer Schema",
+65       "default": "",
+66       "examples": [
+67         ""
+68       ],
+69       "pattern": "^(.*)$"
+70     },
+71     "id": {
+72       "$id": "#/properties/id",
+73       "type": "integer",
+74       "title": "The Id Schema",
+75       "default": 0,
+76       "examples": [
+77         1
+78       ]
+79     },
+80     "userId": {
+81       "$id": "#/properties/userId",
+82       "type": "integer",
+83       "title": "The Userid Schema",
+84       "default": 0,
+85       "examples": [
+86         123
+87       ]
+88     }
+89   }
+90 }

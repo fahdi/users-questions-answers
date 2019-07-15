@@ -17,7 +17,7 @@ const conf = convict({
   mongodb: {
     doc: 'The mongodb connection string.',
     format: '*',
-    default: 'mongodb://localhost:27017/mongoosetest',
+    default: 'mongodb://localhost:27017/users_quest_ans',
     env: 'MONGODB'
   }
 });

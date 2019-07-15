@@ -13,5 +13,4 @@ WIP: Building an app where users can add multiple choice questions where each an
 A running mongo db server
 
 1. Run mongodb server: `mongod --port 2701`  
-2. If you use another port or want to update settings, update `config/development.json` with your configuration. This is a [convict](https://github.com/mozilla/node-convict) configuration format.  
- 
+2. If you use another port or want to update settings, update `config/development.json` with your configuration. This is a [convict](https://github.com/mozilla/node-convict) configuration format.
